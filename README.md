@@ -1,4 +1,4 @@
-# classificados
+# Sistema de Classificados
 Sistema de classificados com PHP e MySQL
 
 <br />Front-enD:
