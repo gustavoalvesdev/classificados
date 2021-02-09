@@ -29,7 +29,7 @@ class Usuario
 	/**
 	 * @return string the number of users
 	 */
-	public function getTotalUsuarios()
+	public function getTotalUsuarios() : string
     {
         global $pdo;
 
@@ -50,7 +50,7 @@ class Usuario
      * 
      * @return boolean true - if there's no user with the same email address / false - email address already exists
      */
-    public function cadastrar(string $nome,  string $email,  string $senha, string $telefone)
+    public function cadastrar(string $nome,  string $email,  string $senha, string $telefone) : boolean
     {
         global $pdo;
         $sql = $pdo->prepare("SELECT id FROM usuarios WHERE email = :email");
@@ -80,7 +80,7 @@ class Usuario
      * 
      * @return boolean whether exists a user with the password and email address given
      */
-    public function login(string $email, string $senha)
+    public function login(string $email, string $senha) : boolean
     {
         global $pdo;
 
