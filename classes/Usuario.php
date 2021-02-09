@@ -48,7 +48,8 @@ class Usuario
      * @param string $senha the password of the user to be added
      * @param string $telefone the phone number of the user to be added
      * 
-     * @return boolean true - if there's no user with the same email address / false - email address already exists
+     * @return boolean true - if there's no user with the same email address / false - email address 
+	 * already exists
      */
     public function cadastrar(string $nome,  string $email,  string $senha, string $telefone) : boolean
     {
@@ -72,14 +73,14 @@ class Usuario
     }
 
 
-    /**
+	/**
 	 * Creates a login session for authenticated users
 	 * 
-     * @param string $email user's email address
-     * @param string $senha user's password
-     * 
-     * @return boolean whether exists a user with the password and email address given
-     */
+	 * @param string $email user's email address
+	 * @param string $senha user's password
+	 * 
+	 * @return boolean whether exists a user with the password and email address given
+	 */
     public function login(string $email, string $senha) : boolean
     {
         global $pdo;
