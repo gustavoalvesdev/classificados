@@ -26,10 +26,10 @@
 class Usuario
 {
     
-	/**
-	 * @return string the number of users
-	 */
-	public function getTotalUsuarios() : string
+    /**
+     * @return string the number of users
+     */
+    public function getTotalUsuarios() : string
     {
         global $pdo;
 
@@ -40,9 +40,9 @@ class Usuario
     }
 
     /**
-	 * 
-	 * Adds a new user
-	 * 
+     * 
+     * Adds a new user
+     * 
      * @param string $nome the name of the user to be added
      * @param string $email the email address of the user to be added
      * @param string $senha the password of the user to be added
@@ -69,18 +69,18 @@ class Usuario
             return true;
         }
         
-		return false;
+	return false;
     }
 
 
-	/**
-	 * Creates a login session for authenticated users
-	 * 
-	 * @param string $email user's email address
-	 * @param string $senha user's password
-	 * 
-	 * @return boolean whether exists a user with the password and email address given
-	 */
+    /**
+     * Creates a login session for authenticated users
+     * 
+     * @param string $email user's email address
+     * @param string $senha user's password
+     * 
+     * @return boolean whether exists a user with the password and email address given
+     */
     public function login(string $email, string $senha) : boolean
     {
         global $pdo;
@@ -96,6 +96,6 @@ class Usuario
             return true;
         } 
         
-		return false;
+        return false;
     }
 }
