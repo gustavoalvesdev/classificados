@@ -50,7 +50,7 @@ class Usuario
      * 
      * @return boolean true - if there's no user with the same email address / false - email address already exists
      */
-    public function cadastrar($nome, $email, $senha, $telefone)
+    public function cadastrar(string $nome,  string $email,  string $senha, string $telefone)
     {
         global $pdo;
         $sql = $pdo->prepare("SELECT id FROM usuarios WHERE email = :email");
@@ -80,7 +80,7 @@ class Usuario
      * 
      * @return boolean whether exists a user with the password and email address given
      */
-    public function login($email, $senha)
+    public function login(string $email, string $senha)
     {
         global $pdo;
 
