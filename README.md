@@ -1,7 +1,7 @@
 # Sistema de Classificados
 Sistema de classificados com PHP e MySQL
 
-<br />Front-enD:
+<br />Front-end:
 <ul>
   <li>HTML</li>
   <li>CSS</li>
